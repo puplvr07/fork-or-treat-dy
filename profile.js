@@ -3,8 +3,8 @@ window.PROFILE = {
   avatar: "assets/img/profile.png",
   name: "Wizard Honeydroid",
   role: "Aspiring ML Engineer",
-  bio: "CS student who loves clean UIs, tidy repos, and teaching what I learn.",
-  tags: ["#HTML", "#CSS", "#Git", "#Halloween", "React", "JavaScript", "ML", "Python", "Dart", "Flutter", "Open Source", "UI/UX"],
+  bio: "CS birdie who loves coding, tidy repos, and applying what I learn.",
+  tags: ["Git", "GitHub", "HTML", "CSS", "JavaScript", "Web Development", "Data Science", "Machine Learning"],
   facts: [
     { label: "Nickname",      value: "Bentong" },
     { label: "Favorite Food", value: "Tonkatsu 🍱" },
