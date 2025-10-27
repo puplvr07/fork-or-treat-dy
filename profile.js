@@ -3,13 +3,13 @@ window.PROFILE = {
   avatar: "assets/img/profile.png",
   name: "Wizard Honeydroid",
   role: "Aspiring ML Engineer",
-  bio: "CS birdie who loves coding, tidy repos, and applying what I learn.",
+  bio: "Tech birdie who loves coding, tidy repos, and applying what I learn.",
   tags: ["Git", "GitHub", "HTML", "CSS", "JavaScript", "Web Development", "Data Science", "Machine Learning"],
   facts: [
     { label: "Nickname",      value: "Bentong" },
     { label: "Favorite Food", value: "Tonkatsu 🍱" },
     { label: "Course",        value: "BS Computer Science" },
-    { label: "College",       value: "Pamantasan ng Lungsod ng Maynila" },
+    { label: "College",       value: "CISTM" },
     { label: "Hobby",         value: "Pixel art 🎨" },
     { label: "Location",      value: "Manila, PH 📍" }
   ]
