@@ -39,7 +39,7 @@ body{
 
 @font-face{
   font-family: "NosiferLocal";
-  src: url("assets/fonts/Nosifer-Regular.ttf") format("truetype");
+  src: url("assets/fonts/MetalMania-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -173,7 +173,7 @@ body{
 .name{
   font-family: "NosiferLocal", "Poppins", system-ui, sans-serif;
   margin: 0 0 var(--s-1);
-  font-size: clamp(1.2rem, 2vw, 0.5rem);
+  font-size: clamp(2rem, 2vw, 0.5rem);
   line-height: 1.05;
   letter-spacing: .5px;
   text-shadow: 0 2px 6px rgba(0,0,0,.45);
