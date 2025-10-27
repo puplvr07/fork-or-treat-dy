@@ -1,5 +1,4 @@
 /* styles.css */
-/* ===== THEME TOKENS ===== */
 :root{
   --bg-start:#110b22;
   --bg-end:#05040a;
@@ -25,7 +24,6 @@
   --content-w: min(92vw, 680px);
 }
 
-/* ===== RESET (minimal) ===== */
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
 body{
@@ -54,7 +52,6 @@ body{
   font-display: swap;
 }
 
-/* ===== PAGE LAYOUT ===== */
 .page{
   min-height:100svh;
   display:grid;
@@ -64,7 +61,6 @@ body{
   overflow:hidden;
 }
 
-/* Halloween accents: moon + subtle bats */
 .page::before,
 .page::after{
   content:"";
@@ -123,15 +119,14 @@ body{
   text-align: center;
   position: relative;
   isolation: isolate;
-  overflow: hidden;           /* clip overlay to rounded corners */
+  overflow: hidden;          
   border-radius: var(--radius);
 }
 
-/* overlay the web image flush to the border (no gap) */
 .web{
   position: absolute;
-  inset: calc(var(--card-pad) * -1); /* cancel the card padding */
-  z-index: 0;                        /* below content, above glow */
+  inset: calc(var(--card-pad) * -1); 
+  z-index: 0;                        
   border-radius: inherit;
   pointer-events: none;
 }
@@ -142,17 +137,14 @@ body{
   object-fit: cover;                
 }
 
-/* make sure real content sits above the overlay */
 .card > :not(.web){
   position: relative;
   z-index: 1;
 }
 
-/* keep your existing .glass and .card::before; optional: place glow under overlay */
-.card::before{ z-index: -1; }        /* glow stays beneath everything */
+.card::before{ z-index: -1; }       
 
 .card::before{
-  /* inner glow, contained */
   content:"";
   position:absolute; inset:-2px;
   border-radius:inherit;
@@ -161,7 +153,6 @@ body{
   z-index:-1; opacity:.35;
 }
 
-/* ===== AVATAR ===== */
 .avatar-wrap{
   width: clamp(104px, 18vw, 140px);
   aspect-ratio: 1/1;
@@ -179,7 +170,6 @@ body{
   object-fit:cover; object-position:50% 40%;
 }
 
-/* ===== TYPOGRAPHY ===== */
 .name{
   font-family: "NosiferLocal", "Poppins", system-ui, sans-serif;
   margin: 0 0 var(--s-1);
@@ -203,7 +193,6 @@ body{
   font-size: clamp(.98rem, 2.3vw, 1.05rem);
 }
 
-/* ===== TAGS ===== */
 .tags{
   list-style:none; padding:0;
   margin: 0 0 var(--s-4);
@@ -217,7 +206,6 @@ body{
   background: rgba(255,255,255,.06);
 }
 
-/* ===== FACTS GRID ===== */
 .facts{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -317,7 +305,6 @@ body{
   .bat{ animation: none !important; }
 }
 
-/* Smooth transitions for interactive bits */
 .tags li,
 .fact{
   transition:
@@ -329,7 +316,6 @@ body{
   will-change: transform, box-shadow, background;
 }
 
-/* TAGS — pumpkin hover */
 .tags li{
   position: relative;
   overflow: hidden;
