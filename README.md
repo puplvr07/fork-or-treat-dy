@@ -2,6 +2,8 @@
 
 *A GitHub Hands-On Workshop*
 
+**Live Demo:** https://fork-or-treat.vercel.app/
+
 A beginner-friendly, single-page Halloween profile card used for our GitHub Study Jam. It’s a **static** site (plain HTML/CSS + tiny JS for data rendering) you can fork, customize, and deploy. Perfect for learning repo basics, branching, commits, pull requests, and branch preview deployments.
 
 ## ✨ Features
